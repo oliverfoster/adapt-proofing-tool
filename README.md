@@ -1,4 +1,7 @@
 # adapt-proofing-tool
+
+npm install -g adapt-proofing-tool-cli
+
 Output text to CSV for easy proofing
 
 In adapt course folder, by the config.json file, run adapt-proofing-tool from bash.  
