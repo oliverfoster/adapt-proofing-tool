@@ -1,6 +1,14 @@
 {
-  "name": "adapt-proofing-tool",
+  "name": "adapt-proofing-tool-cli",
   "version": "0.0.1",
+    "author": {
+    "name": "Oliver Foster",
+    "email": "oliver.foster@kineo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oliverfoster/adapt-proofing-tool-cli.git"
+  },
   "description": "Adapt Learning output framework",
   "repository": {},
   "dependencies": {
@@ -10,6 +18,22 @@
     "backbone": "^1.1.2",
     "underscore": "^1.7.0"
   },
+  "keywords": [
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "http://github.com/oliverfoster/adapt-proofing-tool-cli/raw/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/oliverfoster/adapt-proofing-tool-cli/issues"
+  },
+  "homepage": "https://github.com/oliverfoster/adapt-proofing-tool-cli",
+  "maintainers": [
+    {
+      "name": "oliver.foster",
+      "email": "oliver.foster@kineo.com"
+    }
+  ],
   "bin": {
     "adapt-proofing-tool": "./bin/adapt-proofing-tool-cli"
   }
