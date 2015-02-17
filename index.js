@@ -31,7 +31,7 @@ stringify(proofing, function(err, output){
 });
 
 
-var repl = /\n/g;
+var repl = /(\n{1}|\r{1})/g;
 
 function getComponent(item) {
 	var id = item.get("_id");
