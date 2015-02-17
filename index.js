@@ -31,15 +31,17 @@ stringify(proofing, function(err, output){
 });
 
 
+var repl = /\n/g;
+
 function getComponent(item) {
 	var id = item.get("_id");
 	var title = item.get("title") || "--N/A--";
 	var displayTitle = item.get("displayTitle") || "--N/A--";
 	var body = item.get("body") || "--N/A--";
 
-	title = htmlToText.fromString(title);
-	displayTitle = htmlToText.fromString(displayTitle);
-	body = htmlToText.fromString(body);
+	title = htmlToText.fromString(title).replace(repl, "");
+	displayTitle = htmlToText.fromString(displayTitle).replace(repl, "");
+	body = htmlToText.fromString(body).replace(repl, "");
 
 	var rtn = [
 		[ "COMPONENT", id ],
@@ -63,7 +65,7 @@ function getType(component) {
 		ret.push( [ "", items.length + " ITEMS" ] );
 		_.each(items, function(item, i) {
 			var text = item.text;
-			text = htmlToText.fromString(text);
+			text = htmlToText.fromString(text).replace(repl, "");
 			ret.push(["",text])
 		});
 		ret.push([]);
